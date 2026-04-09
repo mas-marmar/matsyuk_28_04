@@ -1,0 +1,5 @@
+<h1>{{ book.title }}</h1>
+<p><strong>Автор:</strong> {{ book.author }}</p>
+
+<p><a href="{% url 'book_list' book.author %}">Все книги автора {{ book.author }}</a></p>
+<p><a href="{% url 'author_list' %}">Список авторов</a></p>
